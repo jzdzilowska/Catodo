@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://use.typekit.net/syb0vnv.css");
+
+#popup {
+  height: 60px;
+  width: 300px;
+  padding: 0; 
+  position: relative;
+}
+
+#catpic {
+  position: absolute;
+  z-index: 1;
+}
+
+#catpic img {
+  height: 60px;
+}
+
+#text {
+  width: 200px;
+  margin-left: 105px; /* Adjust spacing */
+  margin-top: 20px;
+  position: absolute;
+  z-index: 2;
+  font-size: 16px;
+  font-family: "lores-12-narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+}
+
+#typing-effect {
+  width: 82%;
+  border: none;
+  animation: typing 1s steps(30, end);
+}
+
+#typing-effect:focus {
+  outline: none;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 82%;
+  }
+}
